@@ -1,0 +1,53 @@
+{
+  "name": "new-comb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "react-scripts start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.13.4",
+    "@popperjs/core": "^2.11.8",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.4.3",
+    "big.js": "^6.2.1",
+    "bignumber.js": "^9.1.1",
+    "bootstrap": "^5.3.0",
+    "classnames": "^2.3.2",
+    "flag-icon-css": "^4.1.7",
+    "i18next": "^22.5.1",
+    "i18next-browser-languagedetector": "^7.0.2",
+    "i18next-http-backend": "^2.2.1",
+    "js-cookie": "^3.0.5",
+    "react": "^18.2.0",
+    "react-devtools": "^4.27.8",
+    "react-dom": "^18.2.0",
+    "react-i18next": "^12.3.1",
+    "react-router-dom": "^6.12.0",
+    "react-scripts": "^5.0.1",
+    "react-switch": "^7.0.0",
+    "sass": "^1.63.2",
+    "use-local-storage": "^3.0.0",
+    "web-vitals": "^3.3.2"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

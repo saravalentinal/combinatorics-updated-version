@@ -1,0 +1,984 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    button {
+        @apply text-white border bg-indigo-600 border-indigo-600
+        hover:bg-transparent hover:text-indigo-600 rounded-md
+    }
+} */
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+/* DARK/LIGHT MODE*/
+
+.main-app{
+    background-color: #eceff1;
+}
+
+#light .options div button, #light .calc-box-method, #light .calc-box, #light .method-div button, #light #true{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+#dark {
+    background-color: #1e1e1e;
+}
+
+#dark .background-questions{
+    background-color: #293549;
+}
+
+#dark .logo{
+    color:  #b6b6b6;
+}
+
+#dark .dos{
+    color: #82B1FF;
+}
+
+#dark .options button{
+    border: solid 1px #b6b6b6;
+    background-color: transparent;
+    border-radius: 5px;
+    color: #b6b6b6;
+}
+
+#dark .calculate-button button{
+    background-color: #00C853;
+    color: white;
+}
+
+#dark #trueCalcButton{
+    animation: moveDown ease-in-out 0.2s;
+    animation-fill-mode: both;
+}
+
+#dark #true{
+    background-color: transparent;
+    color: #82B1FF;
+    border: solid 1px #82B1FF;
+}
+
+#dark .dont-know h3{
+    color: #fff;
+}
+
+#dark .calc-box, #dark .calc-box-method{
+    background-color: #80808060;
+}
+
+#dark .setting-button{
+    color: #b6b6b6;
+}
+
+#dark .numbersPermutation h2, #dark .numbers h2, #dark .method-main div h2{
+    color: #eceff1;
+}
+
+#dark .numbersPermutation input, #dark .numbers input, #dark .method-main div input{
+    background-color: #b6b6b6;
+}
+
+#dark .method-div button {
+    border: solid 1px #b6b6b6;
+    background-color: transparent;
+    border-radius: 5px;
+    color: #b6b6b6;
+}
+
+#dark .true{
+    border: solid 1px #82B1FF !important;
+    color: #82B1FF !important;
+    background-color: transparent !important;
+}
+
+#dark .toggle-div button{
+    color: #eceff1;
+    font-weight: 500;
+}
+
+#dark #Sí, #dark #Ja, #dark #Yes{
+    background-color: #00C853;
+    color: #1e1e1e;
+}
+
+#dark #No, #dark #Nein{
+    background-color: #82B1FF;
+    color:#1e1e1e;
+}
+
+#Sí, #No, #Ja, #Yes, #Nein{
+    transition: background-color 0.2s ease-in-out;
+}
+
+#dark .div-result-method{
+    border-top: solid 1px #808080;
+}
+
+#dark .div-result-method h2, #dark .div-result-method h3{
+    color: #eceff1;
+}
+
+#dark .title-method{
+    color:#82B1FF;
+}
+
+#dark .method-main div input{
+    transition: background-color 0.2s ease-in-out;
+}
+
+#dark .numbersPermutation div input:focus, #dark .method-main div input:focus, #dark .numbers div input:focus{
+    border: none;
+    outline: none;
+    background-color: #eceff1;
+}
+
+#dark .numbersPermutation div input{
+    transition: background-color 0.2s ease-in-out;
+}
+
+#dark .title-questions, #dark .question, #dark .example_subtitle{
+    color: #eceff1;
+}
+
+#dark .answer, #dark .answer_explanation, #dark .answer_example{
+    color: #eceff1db;
+}
+
+
+#dark .answer_explanation::before{
+    border-top: solid 1px #b6b6b6;
+}
+
+#dark .firstApple{
+    color:#82B1FF;
+}
+
+#dark .secondApple{
+    color:#d6d6d6;
+}
+
+#dark .thirdApple{
+    color:white;
+}
+
+#dark .list-apples-div ul li{
+    color: white;
+}
+
+#dark .number-circle{
+    color: white;
+}
+
+#dark .accordion-button{
+    background-color: #293549;
+}
+
+#dark .example_title{
+    color: #eceff1;
+}
+
+#dark .accordion-body{
+    background-color: #293549;
+}
+
+#dark .eraser-button{
+    color:rgb(33, 33, 33);
+}
+
+#dark .eraser-button-result{
+    color:rgb(255, 255, 255);
+}
+
+/* NAVBAR */
+.settings{
+    display: flex;
+}
+
+.flag-span{
+    padding: 0 5px 0 10px;
+}
+
+/* MAIN */
+
+.main-app{
+    min-height: 100vh;
+    transition: all .4s; 
+}
+
+.main-div{
+    width: 90%;
+    max-width: 650px;
+    margin: 0 auto;   
+}
+
+
+.nav-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: solid 1px hsla(201, 12%, 42%, 0.384);
+}
+
+.logo{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    font-weight: 600;
+    margin:0;
+    padding:0;
+    color:#1e1e1e;
+}
+
+.link{
+    text-decoration: none;
+}
+
+.dos{
+    font-size: 1.3em;
+    position: relative;
+    top: 5px;
+    color: #2979FF;
+}
+
+.settings button{
+    padding: 8px;
+    font-size: 20px;
+    color:hsl(202, 84%, 10%);
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+}
+
+.settings button:first-child{
+    margin-right: 10px;
+}
+
+.options{
+    padding: 0 0 15px 0;
+    max-width: 500px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 2%;
+    grid-template-columns: 1fr;
+    justify-content:space-between;
+}
+
+.options div button{
+    padding: 18px;
+    margin: 2px 0;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 90%;
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(202, 84%, 10%);
+    font-weight: 500;
+}
+
+.true{
+    background-color: #2962FF !important;
+    color: white !important;
+}
+
+
+#li-options{
+    font-family: 'Montserrat', sans-serif;
+}
+
+#li-options a{
+    color: hsl(202, 84%, 10%);
+    text-decoration: none;
+}
+
+.method-div{
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 0 15px 0;
+}
+
+.method-div button{
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 90%;
+    font-family: 'Montserrat', sans-serif;
+    color: #1e1e1e;
+    font-weight: 500;
+}
+
+/* Main Calc */
+
+.main-calc{
+    margin: 30px auto 0 auto;
+    max-width: 600px;
+    border-radius: 5px;
+}
+
+.numbers, .numbersPermutation{
+    max-width: 400px;
+    display: grid;
+    grid-template-columns: 90%;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    color: hsl(202, 84%, 10%);
+    margin: 0 auto;
+}
+
+.numbers div:last-child{
+    margin-top: 0px;
+}
+
+.numbers div input, .numbersPermutation div input{
+    padding: 8px;
+    width: 95%;
+    margin: 10px 0 0 0;
+    border-radius: 5px;
+    border:none;
+
+    background-color:#eceff1;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.numbers div input:focus, .numbersPermutation div input:focus, .method-main div input:focus{
+    outline: none;
+    background-color: #2962ff4f;
+}
+
+ .calculate-button{
+    text-align: center;
+}
+
+ #calc-button {
+    padding: 15px 30px;
+    margin: 40px 0 0 0;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: white;
+    background-color: #1e1e1e;
+    border: none;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+   }
+
+.result{
+    margin: 0 auto;
+    padding: 10px 0 100px 15px;
+    background-color: rgb(255, 255, 255);
+    max-width: 500px;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.div-result{
+    padding: 20px 0;
+}
+
+.calc-box, .calc-box-method{
+    background-color: white;
+    border-radius: 5px;
+    padding: 50px 40px;
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 12px transparent;
+    border-radius: 8px;
+}
+
+.numbers h2, .numbersPermutation h2{
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+.divisory_line{
+    border-top: solid 3px #82B1FF;
+    width: 240px;
+    margin: 15px auto;
+}
+
+.method-main{
+    display: grid;
+    grid-template-rows: 1fr 1fr 0.8fr 0.8fr;
+    grid-gap: 20px;
+    align-items: center;
+    width: 100%;
+}
+
+.method-main div input{
+    padding: 8px;
+    margin: 10px 0;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    background-color: #eceff1;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.method-main div h2{
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #1e1e1e;
+    margin: 0;
+    padding: 0;
+}
+
+#Sí, #Ja, #Yes{
+    background-color:#00C853;
+    transition: background-color 0.2s ease-in-out;
+}
+
+
+#No, #Nein{
+    background-color: #1e1e1e;
+    transition: background-color 0.2s ease-in-out;
+    color: white;
+}
+
+.calc-box-method{
+    padding: 40px;
+}
+
+.toggle-div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items:flex-start;
+}
+
+.toggle-div input{
+    max-height: 100px;
+}
+
+.toggle-div button{
+    padding: 8px;
+    border:none;
+    border-radius: 5px;
+    width: 100%;
+    font-weight: 500;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+}
+
+.div-result-method{
+    max-width: 75%;
+    border-top: solid 1px hsla(201, 12%, 42%, 0.384);
+    margin: 25px auto 0 auto;
+}
+
+.div-result-method h2{
+    text-align: center;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 0px 20px 20px 20px;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(202, 84%, 10%);
+}
+
+.result-h2{
+    padding-top:20px !important;
+}
+
+.div-result-method h3{
+    text-align: center;
+    font-size: 17px;
+    font-weight: 500;
+    padding:0 0 50px 0;
+    word-wrap: break-word;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(202, 84%, 10%);
+}
+
+.title-method{
+    text-align: center;
+    font-size: 17px;
+    font-weight: 500;
+    margin:0;
+    padding: 0 0 40px 0;
+    color: #2962FF;
+}
+
+.ripple-btn{
+    position: relative;
+    overflow: hidden;
+}
+
+.ripple-btn > .ripple {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: white;
+
+    border-radius: 100%;
+    transform: translate(-50%, -50%);
+    animation: ripple-effect 1s ease 1 forwards;
+}
+
+.div-eraser-button{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content:flex-end;
+}
+
+.eraser-button{
+    background-color: transparent;
+    border: none;
+    position: relative;
+    bottom: 33px;
+    right: 8px;
+    color:rgb(106, 106, 106);
+}
+
+.eraser-button-result{
+    background-color: transparent;
+    border: none;
+    position: relative;
+    top: 20px;
+    right: 0px;
+    color:rgb(106, 106, 106);
+}
+
+
+
+@keyframes ripple-effect {
+    0% {
+        width: 0px;
+        height: 0px;
+
+        opacity: 0.5px;
+    }
+
+    100% {
+        width: 500px;
+        height: 500px;
+        opacity: 0;
+    }
+}
+
+.ripple_btn > .content-children{
+    position: relative;
+    z-index: 2;
+
+    pointer-events: none;
+}
+/* Section Q&A */
+
+.title-questions{
+    font-size: 1.9em;
+    font-weight: 600;
+    margin:0;
+    padding-top: 70px;
+    color:#1e1e1e;
+}
+
+.questions-section{
+    font-family: 'Montserrat', sans-serif;
+    width: 90%;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.question-block{
+    padding: 30px 0 0 0;
+}
+
+.question{
+    font-size: 1.4em;
+    font-weight: 600;
+    color:#1e1e1e;
+}
+
+.example_title{
+    font-size: 1em;
+    font-weight: 600;
+    color:#1e1e1e;
+    padding: 10px 0;
+    margin:0;
+}
+
+.example_subtitle{
+    font-size: 1em;
+    font-weight: 600;
+    color:#1e1e1eda;
+    padding: 15px 0 0 0;
+    margin:0;
+}
+
+
+.question::after{
+    content: '';
+    display: block;
+    width: 24px;
+    padding-top: 8px;
+    border-bottom: 4px solid #82B1FF;
+}
+
+.answer, .answer_explanation{
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0;
+    margin: 30px 0;
+    color: #1e1e1eda;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6em;
+}
+
+.answer_example{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    margin: 20px 0;
+    color: #1e1e1eda;
+    line-height: 1.6em;
+}
+
+.answer_explanation::before{
+    content: '';
+    display: block;
+    width: 30%;
+    margin: 0 auto;
+    padding: 20px 0;
+    border-top: solid 1px #1e1e1eb0;
+    opacity: 0.6;
+}
+
+.seis-formas{
+    font-size: 100spx;
+    color: pink;
+}
+
+.firstApple{
+    color:#448AFF;
+    margin: 0 15px;
+}
+
+.secondApple{
+    color: #808080be;
+    margin: 0 15px;
+}
+
+.thirdApple{
+    color:#1e1e1eb3;
+    margin: 0 15px;
+}
+
+.div-apples{
+    font-size: 45px;
+    text-align: center;
+}
+
+.div-apples ul, .div-apples ul li{
+    margin:0;
+    padding:0;
+}
+
+.list-apples-div ul{
+    list-style: none;
+}
+
+.first-second-apple{
+    display: grid;
+    grid-template-columns: 10% 30% 30% 30%;
+    max-width:350px;
+    margin: 0 auto;
+}
+
+.list-numbers{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#accordionPanelsStayOpenExample{
+    padding: 40px 0;
+}
+
+/* Section Footer */
+
+.footer-box{
+    margin-top: 5
+    0px;
+}
+
+.div-footer-box{
+    text-align: center;
+    border-top: solid 1px hsla(201, 12%, 42%, 0.384);
+    padding: 20px 0 0 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.fa-github{
+    font-size: 2.7em;
+    color: black;
+}
+
+
+.all-rights{
+    margin: 20px 0;
+    font-weight: 400;
+    font-size: 12px;
+    color:#1e1e1ece;
+}
+
+.made-by{
+    margin: 20px 0;
+    font-size: 15px;
+    color:#1e1e1e;
+}
+
+.alejandro, .valentina{
+    color: #448AFF;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* LOADER */
+
+.body-loader{
+    background-color: #eceff1;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.div-loader{
+    width: 80%;
+    margin: 0 auto;
+    max-width: 600px;
+}
+    
+.loader-h1{
+    padding: 50px 0 0 0;
+    margin:0;
+    font-weight: 500;
+    font-family: 'Montserrat';
+    color:#1e1e1e;
+    text-align: center;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+}
+
+.error-h1{
+    padding: 0;
+    margin:0;
+    font-weight: 500;
+    font-family: 'Montserrat';
+    color:#1e1e1e;
+    text-align: center;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+}
+
+
+/* From uiverse.io by @WhiteNervosa */
+.error-button {
+    font-size: 18px;
+    color: #2962FF;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin: 10px 0;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+  }
+  
+  .error-button:focus,
+  .error-button:hover {
+    color: #2962FF;
+  }
+  
+  .error-button:focus:after,
+  .error-button:hover:after {
+    width: 100%;
+    left: 0%;
+  }
+  
+  .error-button:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #2962FF;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+  }
+
+.div-button-error{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: center;
+}
+    
+.loader {
+    width: 48px;
+    height: 48px;
+    margin: auto;
+    position: relative;
+}
+    
+.loader:before {
+    content: '';
+    width: 48px;
+    height: 5px;
+    background: #2962ff62;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    border-radius: 50%;
+    animation: shadow324 0.5s linear infinite;
+}
+    
+.loader:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #2962FF;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 4px;
+    animation: jump7456 0.5s linear infinite;
+}
+
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+    
+    @keyframes jump7456 {
+      15% {
+        border-bottom-right-radius: 3px;
+      }
+    
+      25% {
+        transform: translateY(9px) rotate(22.5deg);
+      }
+    
+      50% {
+        transform: translateY(18px) scale(1, .9) rotate(45deg);
+        border-bottom-right-radius: 40px;
+      }
+    
+      75% {
+        transform: translateY(9px) rotate(67.5deg);
+      }
+    
+      100% {
+        transform: translateY(0) rotate(90deg);
+      }
+    }
+    
+    @keyframes shadow324 {
+    
+      0%,
+        100% {
+        transform: scale(1, 1);
+      }
+    
+      50% {
+        transform: scale(1.2, 1);
+      }
+    }
+
+
+
+/* ANIMATIONS */
+
+@keyframes moveDown {
+    0% { }
+    50% { transform:translateY(5px); box-shadow:rgba(255, 255, 255, 0.5) 0px 6px 0px}
+    100% { }
+}
+
+
+/* Responsive Design */
+
+@media (min-width: 500px){
+
+    /*Main Calc*/
+    .numbers{
+        grid-template-columns: 48% 48%;
+        justify-content: space-between;
+    }
+
+    .numbersPermutation{
+        max-width: 380px;
+    }
+    
+    .numbers div:last-child{
+        margin-top: 0;
+    }
+
+    .options{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    .options div button{
+        padding: 15px;
+        margin: 0;
+    }
+
+}
+
+@media (min-width: 600px){
+
+    /* Apples */
+    .list-apples-div{
+        display: flex;
+    }
+}
+
+
+.number-circle{
+    color:#1e1e1e;
+    display:inline-block;
+    border: solid 2px #00C853;
+    width: 30px;
+    font-size: 14px;
+    height: 30px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 100%;
+
+    display: table-cell;
+    vertical-align: middle;
+}

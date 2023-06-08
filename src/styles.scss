@@ -1,0 +1,11 @@
+$primary: #82B1FF;
+$btn-focus-box-shadow: none;
+$accordion-button-color: #82B1FF;
+
+$theme-colors: (
+    "primary": $primary
+);
+
+$accordion-button-focus-box-shadow: $btn-focus-box-shadow;
+
+@import '../node_modules/bootstrap/scss/bootstrap';
