@@ -1,10 +1,18 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet';
+import { useEffect } from 'react';
 
 export default function PrivacyPolicy() {
   const { t, i18n } = useTranslation();
   const lang = i18n.language || 'en';
+
+    useEffect(() => {
+    const title = document.getElementById('privacy-title');
+    if (title) {
+      title.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, []);
 
   return (
     <div className="privacy-policy-container">
@@ -15,7 +23,7 @@ export default function PrivacyPolicy() {
         <meta name="robots" content="index, follow" />
       </Helmet>
 
-      <h1>{t('privacy.title')}</h1>
+      <h1 id="privacy-title" style={{marginTop: "50px"}}>{t('privacy.title')}</h1>
       <p>{t('privacy.intro')}</p>
       <p>{t('privacy.adsense')}</p>
       <p>{t('privacy.gdpr')}</p>
