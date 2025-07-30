@@ -744,13 +744,13 @@
     color:#1e1e1ece;
 }
 
-.made-by{
+.made-by, .contact-info{
     margin: 20px 0;
     font-size: 15px;
     color:#1e1e1e;
 }
 
-.alejandro, .valentina{
+.valentina{
     color: #448AFF;
     text-decoration: none;
     font-weight: 600;

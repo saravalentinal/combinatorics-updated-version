@@ -8,6 +8,7 @@ import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import i18next from 'i18next'
 import cookies from 'js-cookie'
+import { Helmet } from 'react-helmet';
 
 
 const languages = [
@@ -53,6 +54,14 @@ function Home() {
     
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
   <>
+    <Helmet>
+      <html lang={currentLanguageCode} />
+      <title>{t('seo.title')}</title>
+      <meta name="description" content={t('seo.description')} />
+      <meta name="keywords" content={t('seo.keywords')} />
+      <meta name="author" content="Valentina Latyn" />
+    </Helmet>
+
     <div className='main-app' id={theme}>
 
     <div className = 'main-div'>

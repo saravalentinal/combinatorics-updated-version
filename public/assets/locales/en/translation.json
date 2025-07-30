@@ -72,9 +72,15 @@
       },
     
       "footer": {
-                  "made": "Developed by ",
-                  "and": "and",
-                  "rights": "@Combinados 2022. All rights reserved."
+        "made": "Made by ",
+        "rights": "@Combinados 2025. All rights reserved.",
+        "contact": "If you want to improve this page or report an issue, contact:"
+      },
+
+      "seo": {
+        "title": "Combinados - Combinatorics Calculator",
+        "description": "Calculate combinations, permutations and variations online. Learn math the easy way.",
+        "keywords": "combinations, permutations, variations, math, calculator"
       },
     
       "options": {

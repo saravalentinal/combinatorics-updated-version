@@ -73,16 +73,22 @@
     
       "footer": {
                   "made": "Entwickelt von ",
-                  "and": "und",
-                  "rights": "@Combinados 2022. Alle Rechte vorbehalten."
+                  "rights": "@Combinados 2025. Alle Rechte vorbehalten.",
+                  "contact": "Wenn du diese Seite verbessern oder einen Fehler melden möchtest, kontaktiere:"
       },
-    
+
       "options": {
                   "one": "Kombination ",
                   "two": "Permutation",
                   "three": "Variation ",
                   "four": "Methodenrechner"
         },
+
+      "seo": {
+        "title": "Combinados - Kombinatorik-Rechner",
+        "description": "Berechne Kombinationen, Permutationen und Variationen online. Einfach Mathematik lernen.",
+        "keywords": "Kombinationen, Permutationen, Variationen, Mathematik, Rechner"
+      },
     
       "calc": {
                 "totalNumber": "Gesamtzahl (n)",

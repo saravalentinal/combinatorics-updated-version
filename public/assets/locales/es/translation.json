@@ -73,9 +73,15 @@
     },
   
     "footer": {
-                "made": "Creado por ",
-                "and": "y",
-                "rights": "@Combinados 2022. Todos los derechos reservados."
+      "made": "Hecho por ",
+      "rights": "@Combinados 2025. Todos los derechos reservados.",
+      "contact": "Si quieres mejorar esta página o reportar algún error, comunícate a:"
+    },
+
+    "seo": {
+      "title": "Combinados - Calculadora de combinatoria",
+      "description": "Calculadora de combinaciones, permutaciones y variaciones online. Aprende matemáticas fácilmente.",
+      "keywords": "combinaciones, permutaciones, variaciones, matemáticas, calculadora"
     },
   
     "options": {
