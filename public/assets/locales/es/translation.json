@@ -75,7 +75,8 @@
     "footer": {
       "made": "Hecho por ",
       "rights": "@Combinados 2025. Todos los derechos reservados.",
-      "contact": "Si quieres mejorar esta página o reportar algún error, comunícate a:"
+      "contact": "Si quieres mejorar esta página o reportar algún error, comunícate a:",
+      "privacy": "Política de Privacidad"
     },
 
     "seo": {
@@ -83,7 +84,18 @@
       "description": "Calculadora de combinaciones, permutaciones y variaciones online. Aprende matemáticas fácilmente.",
       "keywords": "combinaciones, permutaciones, variaciones, matemáticas, calculadora"
     },
-  
+
+    "privacy": {
+      "title": "Política de Privacidad",
+      "intro": "En combinadosapp.com no recopilamos información personal identificable de los usuarios.",
+      "adsense": "Este sitio utiliza servicios de terceros como Google AdSense, que pueden usar cookies para mostrar anuncios personalizados y recopilar información no personal sobre la actividad de los visitantes.",
+      "gdpr": "Si te encontrás en la Unión Europea, el Reino Unido o Suiza, verás un mensaje de consentimiento para aceptar o rechazar el uso de cookies.",
+      "nodata": "No almacenamos contraseñas, correos electrónicos ni datos personales.",
+      "googleMoreInfo": "Para más información sobre cómo Google gestiona los datos, podés consultar:",
+      "seoTitle": "Política de Privacidad | Combinados",
+      "seoDescription": "Lee la política de privacidad de Combinados. Descubre cómo se manejan los datos en este sitio."
+    },
+
     "options": {
                 "one": "Combinación ",
                 "two": "Permutación",

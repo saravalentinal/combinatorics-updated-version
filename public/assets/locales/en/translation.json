@@ -74,13 +74,25 @@
       "footer": {
         "made": "Made by ",
         "rights": "@Combinados 2025. All rights reserved.",
-        "contact": "If you want to improve this page or report an issue, contact:"
+        "contact": "If you want to improve this page or report an issue, contact:",
+        "privacy": "Privacy Policy"
       },
 
       "seo": {
         "title": "Combinados - Combinatorics Calculator",
         "description": "Calculate combinations, permutations and variations online. Learn math the easy way.",
         "keywords": "combinations, permutations, variations, math, calculator"
+      },
+
+      "privacy": {
+        "title": "Privacy Policy",
+        "intro": "At combinadosapp.com, we do not collect personally identifiable information from users.",
+        "adsense": "This site uses third-party services like Google AdSense, which may use cookies to show personalized ads and collect non-personal information about visitor activity.",
+        "gdpr": "If you are located in the European Union, the UK, or Switzerland, you will see a consent message to accept or reject the use of cookies.",
+        "nodata": "We do not store passwords, emails, or personal data.",
+        "googleMoreInfo": "For more information about how Google handles data, visit:",
+        "seoTitle": "Privacy Policy | Combinados",
+        "seoDescription": "Read Combinados' privacy policy. Learn how data is handled on this site."
       },
     
       "options": {

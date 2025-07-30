@@ -74,7 +74,17 @@
       "footer": {
                   "made": "Entwickelt von ",
                   "rights": "@Combinados 2025. Alle Rechte vorbehalten.",
-                  "contact": "Wenn du diese Seite verbessern oder einen Fehler melden möchtest, kontaktiere:"
+                  "contact": "Wenn du diese Seite verbessern oder einen Fehler melden möchtest, kontaktiere:",
+                  "privacy": "Datenschutzrichtlinie"
+      },
+
+      "privacy": {
+        "title": "Datenschutzrichtlinie",
+        "intro": "Auf combinadosapp.com sammeln wir keine personenbezogenen Daten der Nutzer.",
+        "adsense": "Diese Website verwendet Dienste Dritter wie Google AdSense, die Cookies verwenden können, um personalisierte Anzeigen anzuzeigen und nicht personenbezogene Informationen über die Aktivitäten der Besucher zu sammeln.",
+        "gdpr": "Wenn du dich in der EU, im Vereinigten Königreich oder in der Schweiz befindest, wird dir eine Einverständnismeldung zur Verwendung von Cookies angezeigt.",
+        "nodata": "Wir speichern keine Passwörter, E-Mails oder personenbezogenen Daten.",
+        "googleMoreInfo": "Weitere Informationen darüber, wie Google mit Daten umgeht, findest du hier:"
       },
 
       "options": {
@@ -87,7 +97,9 @@
       "seo": {
         "title": "Combinados - Kombinatorik-Rechner",
         "description": "Berechne Kombinationen, Permutationen und Variationen online. Einfach Mathematik lernen.",
-        "keywords": "Kombinationen, Permutationen, Variationen, Mathematik, Rechner"
+        "keywords": "Kombinationen, Permutationen, Variationen, Mathematik, Rechner",
+        "seoTitle": "Datenschutzrichtlinie | Combinados",
+        "seoDescription": "Lies die Datenschutzrichtlinie von Combinados. Erfahre, wie mit Daten auf dieser Website umgegangen wird."
       },
     
       "calc": {

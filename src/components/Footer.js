@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   const { t } = useTranslation();
@@ -22,6 +23,8 @@ export default function Footer() {
         {t('footer.contact')}{" "}
         <a href="mailto:combinadosapp@gmail.com">combinadosapp@gmail.com</a>
       </p>
+
+      <Link to="/privacy">{t('footer.privacy')}</Link>
 
       <p className="all-rights">
         {t('footer.rights')}

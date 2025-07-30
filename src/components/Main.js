@@ -7,6 +7,7 @@ import Permutation from './Permutation'
 import VariationWithoutRepetition from './VariationWithoutRepetition'
 import VariationWithRepetition from './VariationWithRepetition'
 import MethodCalculator from './MethodCalculator'
+import PrivacyPolicy from './PrivacyPolicy';
 import Options from './Options'
 /* import Error from './Error' */
 import {Routes, Route} from 'react-router-dom'
@@ -23,6 +24,7 @@ export default function Main() {
           <Route path='/permutation' exact element={<Permutation/>}/>
           <Route path='/variationWithoutRepetition' exact element={<VariationWithoutRepetition/>}/>
           <Route path='/variationWithRepetition' exact element={<VariationWithRepetition/>}/>
+          <Route path="/privacy" element={<PrivacyPolicy />} />
           <Route path='/' exact element={<MethodCalculator/>}/>
           <Route path='*' element={<MethodCalculator/>}></Route>
         </Routes>
